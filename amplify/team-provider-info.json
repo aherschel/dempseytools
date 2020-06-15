@@ -11,5 +11,18 @@
             "StackId": "arn:aws:cloudformation:us-west-2:072027113961:stack/amplify-dempseytools-dev-180533/5115e380-aea4-11ea-9af0-06ce7351dd4e",
             "AmplifyAppId": "d254dfn5z3qqmm"
         }
+    },
+    "master": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-dempseytools-master-183725-authRole",
+            "UnauthRoleArn": "arn:aws:iam::072027113961:role/amplify-dempseytools-master-183725-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::072027113961:role/amplify-dempseytools-master-183725-authRole",
+            "Region": "us-west-2",
+            "DeploymentBucketName": "amplify-dempseytools-master-183725-deployment",
+            "UnauthRoleName": "amplify-dempseytools-master-183725-unauthRole",
+            "StackName": "amplify-dempseytools-master-183725",
+            "StackId": "arn:aws:cloudformation:us-west-2:072027113961:stack/amplify-dempseytools-master-183725/c4bc1260-aea8-11ea-9bfb-02f021385fe8",
+            "AmplifyAppId": "d254dfn5z3qqmm"
+        }
     }
 }
