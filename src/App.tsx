@@ -31,8 +31,8 @@ const App = () => {
               <Redirect to="/tools" />
             </Route>
           </Switch>
-          <AppFooter />
         </Container>
+        <AppFooter />
       </div>
     </Router>
   );

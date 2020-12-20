@@ -6,7 +6,7 @@ const ToolsPage = () => {
     <>
       <br />
       <ToolTile
-        name="Koffie Link"
+        name="Koffie"
         description="A tool which helps you manage your rotation of long-tail friends."
         linkUrl="https://koffie.link"
         logoUrl="/coffee-logo.png"
