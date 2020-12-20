@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { ToolTile } from "..";
+import ToolTile from "../ToolTile";
 
 describe("ToolTile", () => {
     it("renders without crashing", () => {

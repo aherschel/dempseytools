@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { ToolsPage } from "..";
+import ToolsPage from "../ToolsPage";
 
 describe("AboutPage", () => {
   it("renders without crashing", () => {

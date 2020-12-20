@@ -1,5 +1,6 @@
 import React from "react";
-import { Jumbotron, Button } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import Jumbotron from "react-bootstrap/Jumbotron";
 
 interface ToolTileProps {
   name: string;
@@ -23,6 +24,10 @@ const ToolTile = (props: ToolTileProps) => {
       )}
     </Jumbotron>
   );
+};
+
+ToolTile.defaultProps = {
+  linkUrl: undefined,
 };
 
 export default ToolTile;

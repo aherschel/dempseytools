@@ -1,12 +1,12 @@
 import React from "react";
-import { ToolTile } from "../components";
+import ToolTile from "../components/ToolTile";
 
 const ToolsPage = () => {
   return (
     <>
       <br />
       <ToolTile
-        name="Koffie Link"
+        name="Koffie"
         description="A tool which helps you manage your rotation of long-tail friends."
         linkUrl="https://koffie.link"
         logoUrl="/coffee-logo.png"

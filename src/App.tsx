@@ -1,17 +1,16 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import Amplify from "aws-amplify";
-import {
-  BrowserRouter as Router,
-  Redirect,
-  Switch,
-  Route,
-} from "react-router-dom";
-import { Container } from "react-bootstrap";
-import aws_exports from "./aws-exports";
-import { ToolsPage } from "./pages";
-import { AppHeader, AppFooter } from "./components";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Container from "react-bootstrap/Container";
+import awsExports from "./aws-exports";
 
-Amplify.configure(aws_exports);
+const ToolsPage = lazy(() => import("./pages/ToolsPage"));
+const AppHeader = lazy(() => import("./components/AppHeader"));
+const AppFooter = lazy(() => import("./components/AppFooter"));
+
+Amplify.configure(awsExports);
+
+const renderLoader = () => <p>Loading</p>;
 
 /**
  * The top-level App component is responsible for a few key things, including setting up
@@ -19,22 +18,21 @@ Amplify.configure(aws_exports);
  */
 const App = () => {
   return (
-    <Router>
-      <div>
-        <AppHeader />
-        <Container>
-          <Switch>
-            <Route path="/tools">
-              <ToolsPage />
-            </Route>
-            <Route path="/">
-              <Redirect to="/tools" />
-            </Route>
-          </Switch>
+    <Suspense fallback={renderLoader()}>
+      <Router>
+        <div>
+          <AppHeader />
+          <Container>
+            <Switch>
+              <Route path="/">
+                <ToolsPage />
+              </Route>
+            </Switch>
+          </Container>
           <AppFooter />
-        </Container>
-      </div>
-    </Router>
+        </div>
+      </Router>
+    </Suspense>
   );
 };
 
