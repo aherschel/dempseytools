@@ -18,6 +18,12 @@ const ToolsPage = () => {
         logoUrl="/mic-logo.png"
       />
       <ToolTile
+        name="CookiesCookies"
+        description="..."
+        linkUrl="https://cookiescookies.net"
+        logoUrl="/cookie-logo.png"
+      />
+      <ToolTile
         name="Dempsey Tools"
         description="This site! Mainly just an index of other projects."
         logoUrl="/tool-logo.png"
