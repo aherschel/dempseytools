@@ -1,5 +1,5 @@
 import React from "react";
-import { ToolTile } from "../components";
+import ToolTile from "../components/ToolTile";
 
 const ToolsPage = () => {
   return (

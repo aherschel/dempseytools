@@ -1,5 +1,7 @@
 import React from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
 import { FaGithub } from "react-icons/fa";
 
 const AppFooter = () => {
